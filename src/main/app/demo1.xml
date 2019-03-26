@@ -18,7 +18,7 @@ http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/jso
         <json:json-to-object-transformer returnClass="java.util.List" doc:name="JSON to Object"/>
         <logger message="WEBSERVICE -FLOW : #[payload]" level="INFO" doc:name="Logger"/>
         <flow-ref name="common-service-db" doc:name="common-service-db"/>
-        <logger level="INFO" doc:name="Logger"/>
+        <logger message="TEST" level="INFO" doc:name="Logger"/>
     </flow>
     <flow name="common-service-db">
         <logger message="My orginal Payload : #[payload]" level="INFO" doc:name="Logger"/>
