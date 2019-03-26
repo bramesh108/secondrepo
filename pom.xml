@@ -54,7 +54,35 @@
 					</execution>
 				</executions>
 			</plugin>
+			<plugin>
+       <groupId>org.mule.tools.maven</groupId>
+       <artifactId>mule-maven-plugin</artifactId>
+       <configuration>
+         <deploymentType>cloudhub</deploymentType>
+         <muleVersion>3.9.1</muleVersion> 
+         <username>malli_mule</username> 
+         <password>Malli123</password> 
+         <applicationName>demotwo</applicationName>
+         <environment>Sandbox</environment> 
+         <businessGroup>abc</businessGroup>
+         <region>USEast(Ohio)</region>
+         <uri>https://anypoint.mulesoft.com</uri> 
+         <workerType>Micro</workerType>
+         <workers>1</workers>
+       </configuration>
+       <executions>
+         <execution>
+           <id>deploy</id>
+           <phase>deploy</phase>
+           <goals>
+             <goal>deploy</goal>
+           </goals>
+         </execution>
+       </executions>
+     </plugin>
+			
 		</plugins>
+		
 	</build>
 
 	<!-- Mule Dependencies -->
@@ -124,6 +152,11 @@
 			<version>${mule.version}</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+   <groupId>org.mule.tools.maven</groupId>
+   <artifactId>mule-maven-plugin</artifactId>
+   <version>2.2.1</version>
+</dependency>
 	<dependency>
             <groupId>org.mule.modules</groupId>
             <artifactId>mule-module-apikit</artifactId>
