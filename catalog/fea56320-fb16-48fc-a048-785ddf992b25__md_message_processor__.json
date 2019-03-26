@@ -1,0 +1,16 @@
+{
+    "inputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "sreenu-demo"
+        }
+    },
+    "outputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "sreenu-demo"
+        }
+    },
+    "id": "fea56320-fb16-48fc-a048-785ddf992b25",
+    "version": "5.2.0.0"
+}
